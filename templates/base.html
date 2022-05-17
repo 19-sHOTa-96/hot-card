@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- CDN BOOTSTRAP -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+	<!-- FONT AWESOME -->
+	<link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+
+	<!-- FONTS -->
+	<link href="{{ url_for('static', filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+  	<link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:ital,wght@0,100;1,100&family=Patrick+Hand&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+	<title>Hot Card</title>
+
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark">
+	  	 <div class="container-fluid">
+	     <a class="navbar-brand" href="#" id="brand"><i class="fa-solid fa-burger-fries"></i> Navbar</a>
+	     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	     </button>
+		     <div class="collapse navbar-collapse" id="navbarNav">
+
+			      <ul class="navbar-nav">
+			        <li class="nav-item">
+			          <a class="nav-link active" aria-current="page" href="#" id="base-nav">Home</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link active" href="#" id="base-nav">Gallery</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link active" href="#" id="base-nav">About</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link active" id="base-nav">Contact</a>
+			        </li>
+			      </ul>
+
+			      <ul class="navbar-nav navbar-conts">
+		      		 <li class="nav-item">
+		        		 <a class="nav-link active" href="#" id="base-nav" id="base-nav">Registration</a>
+		      		 </li>
+		      		 <!-- <li class="nav-item" id="base-nav-hidded">
+			        	 <a class="nav-link">Registration</a>
+			      	 </li> -->
+		      		 <li class="nav-item">
+		        		 <a class="nav-link active" href="#" id="base-nav" id="base-nav">Login</a>
+		      		 </li>
+		    	 </ul>
+
+		     </div>
+		 </div>
+	</nav>	
+
+	{% block content %}
+
+		
+
+	{% endblock %}
+
+<footer>
+	<a href="#" id="base-footer"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+	<a href="#" id="base-footer"><i class="fa-brands fa-instagram-square fa-2xl"></i></a>
+	<a href="#" id="base-footer"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+</footer>
+
+
+</body>
+</html>

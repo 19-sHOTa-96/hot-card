@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+
+<h1 class="home-h1-1">Hot Card</h1>
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <!-- <img src="https://img4.goodfon.com/wallpaper/nbig/a/a2/galaxy-space-red-dark-black-hd.jpg" class="d-block w-100" alt="..."> -->
+      <h2>First Slide</h2>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <!-- <img src="https://browsecat.net/sites/default/files/cute-galaxy-wallpapers-95296-847534-3629108.png" class="d-block w-100" alt="..."> -->
+      <h2>Second Slide</h2>
+    </div>
+    <div class="carousel-item">
+      <!-- <img src="https://image.winudf.com/v2/image/Y29tLmFuZHJvbW8uZGV2NzA3MDU5LmFwcDc3OTU3OF9zY3JlZW5fMF8xNTI1NzcwNTAwXzA5Ng/screen-0.jpg?fakeurl=1&type=.jpg" class="d-block w-100" alt="..."> -->
+      <h2>Third Slide</h2>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+{% endblock %}
