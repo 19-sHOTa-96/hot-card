@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<form class="log-form-1 bg-dark" action="{{ url_for('login') }}" method="POST">
+	<center>
+	<!--{% with messages = get_flashed_messages() %}
+			{% if messages %}
+				{% for message in messages %}
+                    <div class="alert alert-secondary" role="alert">
+                        {{message}}
+                    </div>
+				{% endfor %}
+			{% endif %}
+	{% endwith %}-->
+	</center>
+	<div class="reg-form-cont-1">
+	  <div class="form-group">
+	    <input name="first_name" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First Name">
+	  </div>
+	  <div class="form-group">
+	    <input name="email" type="email" class="form-control" id="exampleInputPassword1" placeholder="Email">
+	  </div>
+	  <div class="form-group">
+	    <input name="password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+	  </div>
+	  <center><button type="submit" class="btn btn-light log-btn">Login</button></center>
+	</div>
+</form>
+{% endblock %}

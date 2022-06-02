@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<div class="contact-form container">
+	<h1>Contact <br /><u>Us</u></h1>
+	<form>
+		<input type="text" name="name" placeholder="Enter Your Name" class="contact-field">
+		<br />
+		<br />
+		<input type="text" name="phone" placeholder="Enter Your Number" class="contact-field">
+		<br />
+		<br />
+		<input type="password" name="Password" placeholder="Enter Your Password" class="contact-field">
+		<br />
+		<br />
+		<textarea class="contact-area"placeholder="Message"></textarea>
+		<br />
+		<input type="submit" name="cancel" value="Cancel" class="cotact-btn">
+		<input type="submit" name="send" value="Send" class="cotact-btn">
+	</form>
+</div>
+{% endblock %}

@@ -63,7 +63,7 @@ def login():
 
 	if request.method == 'POST':
 		user = Users.query.filter_by(user_name=request.form['first_name']).first()
-		
+
 		if user:
 			if user.user_email == request.form['email']:
 				print(user.user_email)
@@ -73,7 +73,7 @@ def login():
 				elif not check_password_hash(user.password, request.form['password']):
 					flash("Incorrect Password! try again.")
 			elif not user.user_email == request.form['email']:
-				flash("Incorrect Mail! try again.")	
+				flash("Incorrect Mail! try again.")
 		elif not user:
 			flash("Incorrect User Name! try again.")
 		else:
@@ -92,7 +92,6 @@ def logout():
 
 
 @app.route('/contact', methods=['POST', 'GET'])
-@admin
 def contact():
 
 	if request.method == 'POST':
@@ -108,4 +107,4 @@ def contact():
 
 
 if __name__ == "__main__":
-	app.run(debug=True)	
+	app.run(debug=True)
